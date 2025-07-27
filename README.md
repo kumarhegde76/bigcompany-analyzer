@@ -71,6 +71,6 @@ bigcompany-analyzer
  │   │   │   └── util/CsvReader.java
  │   │   └── resources/employees.csv
  │   └── test
- │       └── java/com/company/analyzer/EmployeeAnalyzerTest.java
+ │       └── java/com/company/analyzer/CsvReaderTest.java
  ├── pom.xml
  └── README.md
