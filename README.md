@@ -31,6 +31,20 @@ It ensures:
 - **JUnit 5** (for testing)
 
 ---
+---
+
+## 🧾 Assumptions
+- The input file `employees.csv` is well-formed with the following columns:  
+  `ID, Name, Salary, ManagerID`
+- The CEO is the only employee with no `ManagerID` specified (root of the hierarchy).
+- Salaries are numeric and provided in the same currency.
+- The reporting line depth rule is: **more than 4 managers between an employee and the CEO is considered too long**.
+- For salary validation:
+  - A manager should earn at least **20% more** and at most **50% more** than the average salary of their direct subordinates.
+- If a ManagerID in the file does not exist in the data set, a warning will be logged, and that relationship is skipped.
+- Maximum input size: **up to 1000 employees**, as stated in the problem statement.
+- No GUI or web interface; results are printed to **console only**.
+
 
 ## ▶️ How to Run
 Clone the repository:
